@@ -48,8 +48,7 @@ In `.env` you need:
 | `WANDB_ENTITY` | your team name, the `<team>` in `<host>/<team>/...` URLs |
 | `XAI_API_KEY`, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY` | one per candidate model (see "Missing a key?" below) |
 
-Weave finds its trace server from `WANDB_BASE_URL` (`<host>/traces`), so
-there's nothing else to configure for a dedicated instance. Results land at
+Weave finds its trace server from `WANDB_BASE_URL` (`<host>/traces`), so you should set that to the correct dedicated instance url if you are logging to one. Results land at
 `<host>/<team>/api-evals-101/weave`; `00_check_setup.py` prints the link.
 Never commit `.env` (it's in `.gitignore`).
 
@@ -169,4 +168,3 @@ outputs, so a candidate shouldn't grade itself. Override with `JUDGE_PROVIDER` /
   model.
 - **Quality isn't the whole decision.** Compare latency and token usage in the
   Compare view too.
-
