@@ -170,13 +170,3 @@ outputs, so a candidate shouldn't grade itself. Override with `JUDGE_PROVIDER` /
 - **Quality isn't the whole decision.** Compare latency and token usage in the
   Compare view too.
 
-## Credits
-
-Structure adapted from `wandb/c1-onboarding`: `cap1-evals-session` (one
-scorer list, regression vs. capability suites, binary checks, eval naming) and
-`weave/weave-agents-demo` (agent tracing with `start_conversation`,
-`start_turn`, `start_llm`, `start_tool`).
-
-## License
-
-Apache-2.0, see [LICENSE](LICENSE).
